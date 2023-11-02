@@ -125,14 +125,21 @@ h1 {
     text-align: center;
     color: #ddd;
 }
+
+img {
+    text-align: center;
+    height: 150px; 
+    width: 130px; 
+}
 */
 
 /* Styles for the image within the #profile-img element */
-.profile-img{
+.profile-img {
     text-align: center; /* Center the profile image */
     border-radius: 50%; /* Apply a circular border */
-    height: 150px; 
-    width: 130px;
-    display: block; 
-    margin: 0 auto;
+}
+
+.profile-img img {
+    display: block; /* Set the image to a block level */
+    margin: 0 auto; /* Center the image horizontally */
 }
