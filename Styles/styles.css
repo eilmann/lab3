@@ -134,9 +134,11 @@ img {
 */
 
 /* Styles for the image within the #profile-img element */
-.profile-img {
+.profile-img img{
     text-align: center; /* Center the profile image */
     border-radius: 50%; /* Apply a circular border */
+    height: 150px; 
+    width: 130px;
 }
 
 .profile-img img {
