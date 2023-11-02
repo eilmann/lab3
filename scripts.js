@@ -1,0 +1,10 @@
+$(function(){
+    $('.nav-link.hoverable').hover(
+        function(){
+            $(this).addClass('bounce');
+        },
+        function(){
+            $(this).removeClass('bounce');
+        }
+    );
+});
