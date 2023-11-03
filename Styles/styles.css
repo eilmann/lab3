@@ -181,8 +181,6 @@ h1 {
 }
 
 /*Hobbies*/
-
-/*Hobbies*/
 .hobbies {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the size as needed */
@@ -210,16 +208,29 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .albums img,
 .series img {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    height: 200px;
     margin-bottom: 10px;
 }
 
 .album,
 .serie {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.album p,
+.serie p {
+    margin: 0;
+    padding: 0;
 }
