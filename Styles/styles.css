@@ -169,16 +169,21 @@ h1 {
     margin: 5px;
 }
 
-#insta:link, #insta:visited {
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(128, 0, 70);
+#insta {
+    display: inline-block;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    border: 2px solid rgb(128, 0, 70);
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
-  
-#insta:hover, #insta:active {
+
+#insta:hover,
+#insta:active {
     background-color: rgb(128, 0, 70);
     color: white;
 }
