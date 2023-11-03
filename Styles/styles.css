@@ -198,15 +198,24 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hobby-info img {
-    max-width: 100%; /* Ensure the images remain within their container */
-    height: auto;
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
 }
-
-@media (max-width: 768px) {
-    .hobby-info img {
-        max-width: 80%; /* Example for smaller screens */
-    }
+.album img {
+    height: 150px;
+    width: 150px;
+}
+.album p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: white;
 }
