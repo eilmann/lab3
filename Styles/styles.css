@@ -1,5 +1,3 @@
-/* Custom CSS for Eilman's So Far */
-
 /* Styling the links for the navigation bar */
 .hoverable {
     position: relative;
@@ -10,7 +8,7 @@
 }
 
 .nav-link.hoverable {
-    color: white; /* Change link color to make it visible */
+    color: white; 
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -86,59 +84,87 @@
     padding: 0.5rem 1rem;
 }
 
-/* Other styles */
-/*
+/* Body content */
 body {
+    background-color: rgb(10, 10, 10);
     font-family: Helvetica;
-    background-color: rgb(0, 0, 1)
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Ensure the content stays centered in the viewport */
+    margin: 0;
+    padding: 20;
 }
 
-.table-container {
+/* Home */
+#home-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#dp {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.image-container {
+    padding: 10px;
+}
+
+#name {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
     padding-top: 50px;
 }
 
-table {
-    font-weight: 10;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+p {
+    font-size: 15px;
+    color: white;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+b {
+    color: rgb(185, 223, 255);
 }
 
-th {
-    color: #181818;
-    background-color: #b4b4b4;
-    border: 1px solid #181818;
+#smile {
+    color: yellow;
 }
 
-td {
-    border: 1px solid #181818;
-    background-color: #ddd;
-}
+/* Biodata */
 
 h1 {
     text-align: center;
-    color: #ddd;
-}
-*/
-
-body {
-    font-family: Helvetica;
-    background-color: rgb(0, 0, 1)
+    font-weight: bolder;
+    color: white;
 }
 
-/* Styles for the image within the .profile-img element */
-.profile-img img{
-    text-align: center; /* Center the profile image */
-    border-radius: 50%; /* Apply a circular border */
-    height: 150px; 
-    width: 130px; 
-    display: block; /* Set the image to a block level */
-    margin: 0 auto; /* Center the image horizontally */
+.biodata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
 }
 
+.personal-info,
+.address,
+.contact {
+    flex: 0 1 30%;
+    border: 2px dashed rgb(185, 223, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.additional-info {
+    flex: 0 1 100%;
+    border: 2px dashed rgb(185, 223, 255);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
