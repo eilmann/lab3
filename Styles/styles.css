@@ -198,15 +198,18 @@ h1 {
     margin: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hobby-info p {
     color: white;
 }
 
-.albums, .series {
+.albums,
+.series {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .albums img,
@@ -214,4 +217,9 @@ h1 {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+
+.album,
+.serie {
+    display: flex;
 }
