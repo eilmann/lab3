@@ -183,7 +183,7 @@ h1 {
 /*Hobbies*/
 .hobbies {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the size as needed */
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the size as needed */
     gap: 20px;
     align-items: flex-start;
     justify-content: space-between;
